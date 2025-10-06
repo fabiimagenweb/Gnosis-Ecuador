@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gnosis Ecuador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+ <img src="portada.png" alt="Portada Gnosis Ecuador" class="portada" />
+    <h1> Gnosis Ecuador</h1>
+    <nav>
+      <button onclick="mostrarInicio()">Inicio</button>
+      <button onclick="mostrarBiblioteca()">Biblioteca</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido</h2>
+      <p>Explora el conocimiento gnóstico a través de nuestra biblioteca digital. Consulta títulos, autores y accede a recursos educativos.</p>
+    </section>
+
+    <section id="biblioteca" style="display:none;">
+      <h2>Consulta de libros</h2>
+      <label for="search">Buscar libro:</label>
+      <input type="text" id="search" placeholder="Escribe el título o autor..." />
+      <button onclick="buscarLibro()">Buscar</button>
+      <ul id="lista-libros"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Biblioteca Gnosis Ecuador</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
